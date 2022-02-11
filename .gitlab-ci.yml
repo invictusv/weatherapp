@@ -3,10 +3,12 @@
 build:
   stage: build
   script:
-    - echo "Building..."       
+    - echo "Building..." 
+    - npm run build      
     
 test:
   stage: test
   script:
     - echo "Testing..."
+    - npm run build
 
