@@ -4,11 +4,15 @@ build:
   stage: build
   script:
     - echo "Building..." 
-    - npm run build      
+    - npm run build
+  tags:
+    - vmn2      
     
 test:
   stage: test
   script:
     - echo "Testing..."
     - npm run test
+  tags:
+    - vmn2  
 
