@@ -1,4 +1,12 @@
 # This file pipline for project Simple Nodejs Weather App with stage build and test
 
-
+build:
+  stage: build
+  script:
+    - echo "Building..."       
+    
+test:
+  stage: test
+  script:
+    - echo "Testing..."
 
