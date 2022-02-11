@@ -10,5 +10,5 @@ test:
   stage: test
   script:
     - echo "Testing..."
-    - npm run build
+    - npm run test
 
