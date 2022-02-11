@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Building ...\"",
-    "test" : "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Building...\"",
+    "test" : "echo \"Error: no test specified\"",
     "start": "node server.js"
   },
   "repository": {
