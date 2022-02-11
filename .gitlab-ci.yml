@@ -2,8 +2,7 @@
 
 build:
   stage: build
-  script:
-    - echo "Building..." 
+  script: 
     - npm run build
   tags:
     - vmn2      
@@ -11,7 +10,6 @@ build:
 test:
   stage: test
   script:
-    - echo "Testing..."
     - npm run test
   tags:
     - vmn2  
