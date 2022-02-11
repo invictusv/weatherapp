@@ -3,8 +3,9 @@
 build:
   stage: build
   script:
-    - echo "Building..." 
-    - npm run build
+    - echo "Building..."
+    - npm install 
+    
   tags:
     - vmn2      
     
