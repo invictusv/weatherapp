@@ -13,5 +13,14 @@ test:
     - echo "Testing..."
     - npm run test
   tags:
-    - vmn2  
+    - vmn2 
+
+deploy:
+  stage: deploy
+  script:
+    - docker stop
+    - docker run -d -p 3000:3000
+  tags:
+    - vmn2
+
 
