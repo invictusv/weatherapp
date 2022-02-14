@@ -1,4 +1,5 @@
-FROM node:17
+#FROM node:17
+FROM node:lts
 # Задаём текущую рабочую директорию
 WORKDIR /usr/src/app
 COPY package*.json ./
