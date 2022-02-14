@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "echo \"Building simple-nodejs-weather-app...\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "start": "node server.js"
   },
   "repository": {
