@@ -13,6 +13,6 @@ services:
 
 
   app:
-    build: 
+    build: .
     expose:
       - "3000"
