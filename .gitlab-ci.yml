@@ -14,4 +14,13 @@ test:
     - npm run test
   tags:
     - vmn2  
+deploy:
+  stage: deploy
+  script:
+    - docker stop  simple-nodejs-weather-app
+    - docker rm simple-nodejs-weather-app
+    - docker run -d -p 3000:3000 --name  simple-nodejs-weather-app
+  tags:
+    - vmn2 
+
 
