@@ -1,19 +1,8 @@
-
-
-build:
-  stage: build
-  script:
-    - docker build . -t simple-nodejs-weather-app
-  tags:
-    - vmn2      
-    
+        
 deploy:
   stage: deploy
   script:
-    - docker stop simple-nodejs-weather-app #останавливаем пердидущий контейнер
-    - docker rm simple-nodejs-weather-app #удаляем его
-    - docker run -d -p 3000:3000 --name  simple-nodejs-weather-app simple-nodejs-weather-app #запускаем контейнер из нового образа 
+    - docker-compose down
+    - docker-compose up -d
   tags:
-    - vmn2 
-
-
+    - vmn2
