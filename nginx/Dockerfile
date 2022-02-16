@@ -1,3 +1,3 @@
 FROM nginx:stable
-RUN rm -rf /etc/nginx/default.conf
+RUN rm -rf /etc/nginx/conf.d/default.conf
 COPY . /etc/nginx/
