@@ -5,7 +5,7 @@ build:
   script:
     - docker build . -t simple-nodejs-weather-app
   tags:
-    - shell      
+    - vmn2      
     
 deploy:
   stage: deploy
@@ -14,6 +14,6 @@ deploy:
     - docker rm simple-nodejs-weather-app #удаляем его
     - docker run -d -p 3000:3000 --name  simple-nodejs-weather-app simple-nodejs-weather-app
   tags:
-    - shell 
+    - vmn2 
 
 
