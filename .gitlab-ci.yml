@@ -5,22 +5,15 @@ build:
   script:
     - echo "Building..." 
     - docker build . -t vmn3/simple-nodejs-weather-app
-    - npm install
   tags:
     - vmn2      
-test:
-  stage: test
-  script:
-    - echo "Testing..."
-    - npm run test
-  tags:
-    - vmn2  
+    
 deploy:
   stage: deploy
   script:
     - docker stop vmn3/simple-nodejs-weather-app
     - docker rm vmn3/simple-nodejs-weather-app
-    - docker run -d -p 3000:3000 --name SOMENAME vmn3/simple-nodejs-weather-app
+    - docker run -p 3000:3000 -d vmn3/simple-nodejs-weather-app
   tags:
     - vmn2 
 
