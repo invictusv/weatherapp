@@ -25,7 +25,7 @@ app.post('/', function (req, res) {
       if(weather.main == undefined){
         res.render('index', {weather: null, error: 'Error, please try again'});
       } else {
-        let weatherText = `It's ${Math.round(5/9*(weather.main.temp-32))} degrees Celsius and ${weather.main.humidity}% of the relative air humidity ${weather.name}!`;
+        let weatherText = `It's ${Math.round(5/9*(weather.main.temp-32))} degrees Celsius and ${weather.main.humidity}% of the relative air humidity in ${weather.name}!`;
         res.render('index', {weather: weatherText, error: null});
       }
     }
